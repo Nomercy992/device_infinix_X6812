@@ -64,12 +64,12 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	# Android 12 Encryption *temporary use until binary.xml file will implement* #
 	export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
-	export OF_SKIP_FBE_DECRYPTION_SDKVERSION=31 # Don't try to decrypt A12
+	export OF_SKIP_FBE_DECRYPTION_SDKVERSION=34 # Don't try to decrypt A14(?)
     
 	# R11
 	export FOX_R11=2
 	export FOX_VERSION="R11.1"
-	export FOX_VARIANT=BETA
+	export FOX_VARIANT=Stable
 	export OF_PATCH_AVB20=1
 	export OF_MAINTAINER="Nomercy"
 	export FOX_ADVANCED_SECURITY=1
