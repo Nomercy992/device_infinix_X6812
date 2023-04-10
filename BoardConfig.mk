@@ -139,6 +139,7 @@ BOARD_USES_MTK_HARDWARE := true
 TW_THEME := portrait_hdpi
 TW_DEVICE_VERSION := Jprimero15_build
 RECOVERY_SDCARD_ON_DATA := true
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 TARGET_USES_MKE2FS := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 1200
@@ -157,6 +158,9 @@ TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_HAS_MTP := true
 TW_FRAMERATE := 60
+
+# Recovery fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
 # Debug
 TWRP_INCLUDE_LOGCAT := true
