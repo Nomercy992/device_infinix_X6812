@@ -63,7 +63,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_FLASHLIGHT_ENABLE=0
 
 	# Android 12 Encryption *temporary use until binary.xml file will implement* #
-	export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=0
+	export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
 	export OF_SKIP_FBE_DECRYPTION_SDKVERSION=34 # Don't try to decrypt A14(?)
     
 	# R11
